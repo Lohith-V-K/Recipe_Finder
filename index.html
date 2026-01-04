@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-utensils"></i> Recipe Finder</h1>
+            <p>Find Your Next Culinary Masterpiece</p>
+
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for a recipe (e.g., Chicken, Pasta)...">
+                <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 id="result-heading"></h2>
+
+            <!-- Featured Images Section -->
+            <section id="featured-section" class="featured-section">
+                <!-- <h2>Featured Delights</h2> -->
+                <div class="featured-gallery">
+                    <img src="foodimages/2.jpeg" alt="Delicious Food 1" class="featured-img">
+                    <img src="foodimages/3.jpeg" alt="Delicious Food 2" class="featured-img">
+                    <img src="foodimages/4.jpeg" alt="Delicious Food 3" class="featured-img">
+                    <img src="foodimages/5.jpeg" alt="Delicious Food 4" class="featured-img">
+                    <img src="foodimages/WhatsApp Image 2026-01-04 at 12.56.11 PM.jpeg" alt="Delicious Food 5"
+                        class="featured-img">
+                    <img src="foodimages/6.jpeg" alt="Delicious Food 6" class="featured-img">
+                    <img src="foodimages/7.jpeg" alt="Delicious Food 7" class="featured-img">
+                    <img src="foodimages/8.jpeg" alt="Delicious Food 8" class="featured-img">
+                </div>
+            </section>
+
+            <!-- Loading Spinner -->
+            <div id="loader" class="loader hidden"></div>
+
+            <!-- Recipe Grid -->
+            <div id="meals" class="meals-grid"></div>
+        </div>
+    </main>
+
+    <!-- Recipe Modal -->
+    <div id="recipe-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
